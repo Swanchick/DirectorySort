@@ -21,9 +21,9 @@ namespace DirectorySort
         {
             string[] fileNameSplited = fileName.Split('.');
 
-            if (fileNameSplited.Length != 2) return "";
+            if (fileNameSplited.Length == 1) return "";
 
-            return fileNameSplited[1];
+            return fileNameSplited.Last();
         }
     }
 }
